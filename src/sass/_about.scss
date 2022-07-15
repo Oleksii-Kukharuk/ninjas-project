@@ -1,0 +1,221 @@
+.about {
+    background-color: #FFF5F6;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.about-pre-title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(21 / 18);
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFA5BA;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1.153;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.133;
+        letter-spacing: 0.04em;
+
+    }
+}
+
+.about-title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: calc(39 / 34);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+    margin-top: 15px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        margin-top: 16px;
+        font-size: 48px;
+        line-height: 1.145;
+        letter-spacing: 0.04em;
+
+        color: #D41443;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 1.137;
+        letter-spacing: 0.06em;
+        margin-bottom: 0;
+    }
+}
+
+.about-list {
+    margin-top: 40px;
+}
+
+.about-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: #000000;
+    width: 220px;
+    margin-bottom: 40px;
+
+
+    @media screen and (min-width: 768px) {
+        width: unset;
+        font-size: 14px;
+        line-height: 1.78;
+        margin-right: 34px;
+        margin-bottom: 0px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.75;
+        letter-spacing: 0.04em;
+        text-align: left;
+        padding-top: 80px;
+        margin-bottom: 0px;
+
+
+    }
+}
+
+.about-text-2 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: #907E82;
+    width: 220px;
+
+    @media screen and (min-width: 768px) {
+        width: unset;
+        margin-top: 32px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.78;
+        margin-right: 34px;
+        letter-spacing: 0.04em;
+
+        color: #907E82;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: unset;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.94;
+        letter-spacing: 0.04em;
+    }
+
+}
+
+.about-btn {
+    border-radius: 22px;
+    color: #D41443;
+    background-color: #FFFFFF;
+    width: 176px;
+    height: 44px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: color, 300ms linear, background-color, 300ms linear;
+
+    @media screen and (min-width: 768px) {
+        display: unset;
+    }
+
+
+}
+
+.about-btn:hover,
+.about-btn:focus {
+    background-color: #D41443;
+    color: #FFFFFF;
+}
+
+
+.about-milk {
+    position: absolute;
+    top: -50px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: unset;
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.about-flex {
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.about-img {
+    padding-right: 32px;
+}
+
+.about-content {
+    width: 220px;
+
+    @media screen and (min-width: 768px) {
+        width: 334px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 463px;
+    }
+
+}
+
+.about-milk-dex {
+    display: none;
+    position: absolute;
+
+
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1300px) {}
+}
+
+.about-icon {
+    fill: #000000;
+}

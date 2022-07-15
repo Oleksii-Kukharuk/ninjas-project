@@ -1,32 +1,39 @@
 <section class="hero">
-  <div class="hero__wrapper">
-    <h1 class="hero__title">ice cream made with passion</h1>
-    <ul class="hero__btn-list">
-      <li class="hero__btn-item">
-        <a class="hero__btn" href="#">Products</a>
-      </li>
-      <li class="hero__btn-item">
-        <a class="hero__btn" href="#">How it’s made?</a>
-      </li>
-    </ul>
-
-    <div class="hero-about">
-      <img
-        class="hero-about__img"
-        src="/src/images/hero-about.svg"
-        alt="кувшин"
-        width="213"
-      />
-      <div class="hero-about__wrapper">
-        <p class="hero-about__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-        <button class="hero-about__text" type="button">
-          <svg class="chevron__svg" width="32px" height="32px">
-            <use href="/src/images/hero_symbol-defs.svg#icon-hero-arrow"></use>
-          </svg>
-        </button>
+  <div class="hero__main-wrapper container">
+    <div class="hero__wrapper">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__span">passion</span>
+      </h1>
+      <ul class="hero__btn-list">
+        <li class="hero__btn-item">
+          <a class="hero__btn" href="#">Products</a>
+        </li>
+        <li class="hero__btn-item">
+          <a class="hero__btn --btn_modificator" href="#">How it’s made?</a>
+        </li>
+      </ul>
+      <div class="hero_thmb">
+        <div class="hero-about">
+          <img
+            class="hero-about__img"
+            src="/src/images/hero-about.svg"
+            alt="кувшин"
+            width="213"
+          />
+          <div class="hero-about__wrapper">
+            <p class="hero-about__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <button class="hero-about__btn" type="button">
+              <svg class="hero-about__svg" width="10" height="12px">
+                <use
+                  href="/src/images/hero_symbol-defs.svg#icon-hero-arrow"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -53,11 +60,11 @@
 
     <ul class="hero-info">
       <li class="hero-info__item">
-        <span class="hero-info__number">16</span>
+        <p class="hero-info__number">16</p>
         <p class="hero-info__text">cafes</p>
       </li>
       <li class="hero-info__item">
-        <span class="hero-info__number">23</span>
+        <p class="hero-info__number">23</p>
         <p class="hero-info__text">food trucks</p>
       </li>
     </ul>

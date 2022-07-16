@@ -1,18 +1,16 @@
 .footer {
   background-color: #fff5f6;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
 
   .footer-content {
-    padding: 0 20px;
+    padding: 20px 20px 40px;
+  }
+  &__title-wrapper {
+    max-width: 232px;
+    margin-bottom: 40px;
   }
 
   &__title {
-    max-width: 232px;
     font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.17;
     text-transform: uppercase;
@@ -21,16 +19,12 @@
     color: #ffa5ba;
   }
   &__subtitle {
-    max-width: 200px;
     font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
     font-size: 34px;
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
-    margin-bottom: 40px;
   }
 
   &__social-wrapper {
@@ -38,21 +32,12 @@
   }
   &__contact {
     font-family: 'DM Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.83;
     text-align: right;
-    color: #000000;
-    margin-bottom: 40px;
   }
   &__contact-link {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.83;
-    text-align: right;
     color: #d41443;
   }
   .footer-soc-list {
@@ -67,7 +52,6 @@
 
   .footer-basement {
     font-family: 'DM Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
@@ -75,7 +59,69 @@
 
     color: #907e82;
     border-top: 1px solid #e1e1e1;
-    width: 100%;
     padding: 16px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__title-wrapper {
+      max-width: 340px;
+      margin-bottom: 0;
+    }
+
+    &__title {
+      font-size: 26px;
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+      margin-bottom: 12px;
+    }
+    &__subtitle {
+      font-size: 48px;
+      line-height: 1.15;
+      letter-spacing: 0.06em;
+    }
+
+    &__contact {
+      font-size: 14px;
+      line-height: 1.86;
+    }
+
+    .footer-content-bottom {
+      align-self: flex-end;
+    }
+    .footer-basement {
+      line-height: 1.86;
+      letter-spacing: 0.02em;
+      display: flex;
+      justify-content: center;
+
+      width: 100%;
+      padding: 8px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__title-wrapper {
+      max-width: unset;
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 1.13;
+      margin-bottom: 16px;
+    }
+    &__subtitle {
+      font-size: 58px;
+      line-height: 1.14;
+    }
+
+    &__contact {
+      font-size: 16px;
+    }
   }
 }

@@ -27,10 +27,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 33px;
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 20px;
   }
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 16px;
   }
 }
@@ -46,6 +46,10 @@
   padding: 41px 52px 19px 71px;
   z-index: 100;
   margin-bottom: 34px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 216%;
@@ -53,8 +57,7 @@
     padding: 37px 53px 44px 51px;
     background-color: transparent;
     margin-bottom: 24px;
-    margin-left: 42px;
-    margin-right: 42px;
+    width: 620px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
@@ -62,8 +65,7 @@
     padding: 47px 109px 39px 109px;
     background-color: #fafafa;
     margin-bottom: 36px;
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 968px;
   }
 
   &::before {
@@ -158,7 +160,7 @@
   line-height: 186%;
   text-align: center;
   color: #000000;
-  margin-bottom: 28px; 
+  margin-bottom: 28px;
   @media screen and (min-width: 768px) {
     font-size: 16px;
     margin-bottom: 44px;
@@ -167,6 +169,8 @@
     font-size: 20px;
   }
   &::before {
+    // Картинка
+
     // content: '';
     // position: absolute;
     // top: -16px;
@@ -175,6 +179,9 @@
     // background-image: url(../images/dots.png);
     // width: 32px;
     // height: 4px;
+
+    // Текст
+
     content: '. . .';
     color: #c7133e;
     font-size: 31px;

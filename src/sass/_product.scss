@@ -249,35 +249,35 @@
 }
 
 .products__immage--rose::before {
-  background-image: url(../images/desctop-foto/ice1x.png);
+  // background-image: url(../images/desctop-foto/ice1x.png);
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/desctop-foto/ice2x.png);
+    // background-image: url(../images/desctop-foto/ice2x.png);
   }
 }
 
 .products__immage--yellow::before {
-  background-image: url(../images/desctop-foto/pic1x.png);
+  // background-image: url(../images/desctop-foto/pic1x.png);
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/desctop-foto/pic2x.png);
+    // background-image: url(../images/desctop-foto/pic2x.png);
   }
 }
 
 .products__immage--green::before {
-  background-image: url(../images/desctop-foto/home-pic1x.png);
+  // background-image: url(../images/desctop-foto/home-pic1x.png);
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/desctop-foto/home-pic2x.png);
+    // background-image: url(../images/desctop-foto/home-pic2x.png);
   }
 }
 

@@ -1,0 +1,299 @@
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+} */
+
+/* .container {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+} */
+
+.products__section {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.container--products {
+  padding-left: 112px;
+  padding-right: 112px;
+}
+
+.section__label {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+}
+
+.products-title__name {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #d41443;
+  margin-bottom: 260px;
+}
+/* Питання по ширині і висоті цього контейнера */
+.products__last-title--icecream {
+  background: #ffb8ca;
+  border-radius: 24px;
+  /* position: absolute; */
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 160px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 50px;
+
+  /* -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; */
+}
+
+.products__last-title--icecoffee {
+  background: #f0d1a5;
+  border-radius: 24px;
+  /* width: 368px;
+    height: 535px; */
+  text-align: center;
+
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 160px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 50px;
+}
+
+.products__last-title--milkshakes {
+  background: #c2e297;
+  border-radius: 24px;
+  /* width: 368px;
+    height: 535px; */
+  text-align: center;
+
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 160px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 50px;
+}
+
+.products-name {
+  font-family: 'Titan One';
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 65px;
+}
+
+.products-name::after {
+  content: '. . .';
+  position: absolute;
+  top: 205px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.products__text {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  /* or 28px */
+  /* margin-left: 62px;
+    margin-top: 32px;
+    margin-right: 62px;
+    margin-bottom: 60px; */
+
+  /* max-height: 125px; */
+  overflow: hidden;
+  margin-bottom: auto;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+
+.products-list {
+  width: 100%;
+  margin: 0;
+
+  display: flex;
+  /* position: relative; */
+}
+
+.products-list__item {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  height: 525px;
+  cursor: pointer;
+  margin-right: 32px;
+}
+
+.products-list__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.products__immage {
+  /* position: relative; */
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+}
+
+.products__immage--rose {
+  background-color: #ffb8ca;
+}
+
+.products__immage--yellow {
+  background-color: #f0d1a5;
+}
+
+.products__immage--green {
+  background-color: #c2e297;
+}
+
+.products__immage--rose::before,
+.products__immage--yellow::before,
+.products__immage--green::before {
+  content: '';
+  width: 250px;
+  height: 250px;
+
+  position: absolute;
+  left: 50%;
+  top: -23%;
+  transform: translateX(-50%);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /* @media screen and($tablet) {
+      width: 220px;
+      height: 220px;
+      top: -20.5%;
+    }
+  
+    @media screen and($desktop) {
+      width: 335px;
+      height: 335px;
+      top: -40%;
+    } */
+}
+
+.products__immage--rose::before {
+  background-image: url(../images/desctop-foto/ice1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/desctop-foto/ice2x.png);
+  }
+}
+
+.products__immage--yellow::before {
+  background-image: url(../images/desctop-foto/pic1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/desctop-foto/pic2x.png);
+  }
+}
+
+.products__immage--green::before {
+  background-image: url(../images/desctop-foto/home-pic1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/desctop-foto/home-pic2x.png);
+  }
+}
+
+.products__button {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: none;
+}
+
+.products__puncts {
+  fill: #ffffff;
+  margin-bottom: 32px;
+}
+
+.products__svg {
+  fill: #d41443;
+}

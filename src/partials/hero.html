@@ -14,12 +14,28 @@
       </ul>
       <div class="hero_thmb">
         <div class="hero-about">
-          <img
-            class="hero-about__img"
-            src="/src/images/hero-about.svg"
-            alt="кувшин"
-            width="213"
-          />
+          <picture>
+            <source
+              srcset="
+                /src/images/hero-about-pc.png    1x,
+                /src/images/hero-about-pc@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                /src/images/hero-about-tablet.png    1x,
+                /src/images/hero-about-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              class="hero-about__img"
+              src="/src/images/hero-about-pc@2x.png"
+              alt="кувшин"
+              width="213"
+            />
+          </picture>
           <div class="hero-about__wrapper">
             <p class="hero-about__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -37,26 +53,80 @@
       </div>
     </div>
 
-    <div class="hero-decor">
-      <img
-        class="hero-decor__ellipse"
-        src="/src/images/hero_ellipse.svg"
-        alt="эллипс"
-        width="534"
-      />
-      <img
-        class="hero-decor__icecream"
-        src="/src/images/hero_icecream.svg"
-        alt="Мороженое"
-        width="236"
-      />
-      <img
-        class="hero-decor__hot-lady"
-        src="/src/images/hero_sooo-tasty.svg"
-        alt="Мороженое"
-        width="304"
-      />
-    </div>
+    <ul class="hero-decor">
+      <li class="hero-decor-item">
+        <picture>
+          <source
+            srcset="
+              /src/images/hero-ellipse-pc.png    1x,
+              /src/images/hero-ellipse-pc@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              /src/images/hero-ellipse-tablet.png    1x,
+              /src/images/hero-ellipse-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            class="hero-decor__ellipse"
+            src="/src/images/hero-ellipse-pc@2x.png"
+            alt="эллипс"
+            width="534"
+          />
+        </picture>
+      </li>
+      <li class="hero-decor-item">
+        <picture>
+          <source
+            srcset="
+              /src/images/hero-icecream-pc.png    1x,
+              /src/images/hero-icecream-pc@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              /src/images/hero-icecream-tablet.png    1x,
+              /src/images/hero-icecream-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            class="hero-decor__icecream"
+            src="/src/images/hero-icecream-pc@2x.png"
+            alt="Мороженое"
+            width="236"
+          />
+        </picture>
+      </li>
+      <li class="hero-decor-item">
+        <picture>
+          <source
+            srcset="
+              /src/images/hero-sooo-tasty-pc.png    1x,
+              /src/images/hero-sooo-tasty-pc@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              /src/images/hero-sooo-tasty-tablet.png    1x,
+              /src/images/hero-sooo-tasty-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            class="hero-decor__hot-lady"
+            src="/src/images/hero-sooo-tasty-pc@2x.png"
+            alt="Мороженое"
+            width="304"
+          />
+        </picture>
+      </li>
+    </ul>
 
     <ul class="hero-info">
       <li class="hero-info__item">

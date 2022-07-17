@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding-top: 194px;
   padding-bottom: 158px;
+  overflow: hidden;
   @media screen and (max-width: 319px) {
     background-image: url(/src/images/hero-mb-bg.jpg);
     height: 502px;
@@ -15,7 +16,7 @@
     }
   }
 
-  @media screen and (min-width: 320px) and (max-width: 768px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     background-image: url(/src/images/hero-mb-bg.jpg);
     height: 502px;
     background-position: center;

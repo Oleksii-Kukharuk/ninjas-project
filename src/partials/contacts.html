@@ -1,6 +1,6 @@
 <div class="section">
   <h2 class="visually-hidden">Contacts</h2>
-  <div class="contacts-container">
+  <div class="container contacts-container">
     <div class="contacts">
       <div>
         <p class="contacts__category">CAFE</p>
@@ -110,17 +110,99 @@
     </div>
   </div>
   <div class="btn-container">
-    <button type="button" class="btn-main" data-modal-open>
-      <span class="btn__text">Our Locations</span
-      ><svg class="btn__icon" width="6" height="10">
+    <button type="button" class="btn-main" contacts-menu-open>
+      <span class="btn__text">Our Locations</span>
+      <!-- <svg class="btn__icon" width="6" height="10">
         <use href="./images/contacts_arrow.svg"></use>
-      </svg>
+      </svg> -->
     </button>
-    <button type="button" class="btn-second" data-modal-open>
-      <span class="btn__text">Franchise</span
-      ><svg class="btn__icon btn__icon-red" width="6" height="10">
+    <button type="button" class="btn-second" primary-contacts-menu-open>
+      <span class="btn__text">Franchise</span>
+      <!-- <svg class="btn__icon btn__icon-red" width="6" height="10">
         <use href="./images/contacts_arrow-red.svg"></use>
-      </svg>
+      </svg> -->
     </button>
   </div>
+</div>
+
+<div class="modal is-hidden" data-modal>
+          <button type="button" class="modal__btn-close" contacts-menu-close>
+          
+        </button>
+     <div>
+        <p class="modal__category">CAFE</p>
+        <p class="modal__city">New York</p>
+        <p class="modal__description">
+          Fusce ut velit laoreet, tempus arcu molestie vulputate
+        </p>
+
+        <ul class="list modal__list--margin">
+          <li class="modal__item">Monday - Friday</li>
+          <li class="modal__item modal__item--color">
+            06:00 AM - 10:00 PM
+          </li>
+        </ul>
+        <ul class="list modal__list">
+          <li class="modal__item">Saturday - Sunday</li>
+          <li class="modal__item modal__item--color">
+            08:00 AM - 16:00 PM
+          </li>
+        </ul>
+
+        <ul class="list modal__nav modal__nav--margin">
+          <li class="modal__item">
+            <a href="tel:+61(0)383766284" class="modal__tel"
+              >+61(0) 383 766 284
+            </a>
+          </li>
+          <li class="modal__item">
+            <a href="mailto:noreply@envato.com" class="modal__mail"
+              >noreply@envato.com</a
+            >
+          </li>
+        </ul>
+      </div>
+</div>
+
+
+<div class="modal is-hidden" primary-data-modal>
+          <button type="button" class="modal__btn-close" primary-contacts-menu-close>
+          
+        </button>
+    <div>
+        <p class="modal__category modal--color">FOOD TRUCK</p>
+        <p class="modal__city">Los Angeles</p>
+        <p class="modal__description">
+          Fusce ut velit laoreet, tempus arcu molestie vulputate
+        </p>
+
+        <ul class="list modal__list--margin">
+          <li class="modal__item">Monday - Friday</li>
+          <li class="modal__item modal__item--color">
+            06:00 AM - 10:00 PM
+          </li>
+        </ul>
+        <ul class="list modal__list">
+          <li class="modal__item">Saturday - Sunday</li>
+          <li class="modal__item modal__item--color">
+            08:00 AM - 16:00 PM
+          </li>
+        </ul>
+
+        <ul class="list modal__nav modal__nav--margin">
+          <li class="modal__item">
+            <a href="tel:+61(0)383766284" class="modal__tel"
+              >+61(0) 383 766 284
+            </a>
+          </li>
+          <li class="modal__item">
+            <a href="mailto:noreply@envato.com" class="modal__mail"
+              >noreply@envato.com</a
+            >
+          </li>
+        </ul>
+      </div>
+</div>
+
+  <script src="./js/contacts-modal.js"></script>
 </div>

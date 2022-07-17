@@ -14,16 +14,6 @@
     padding-bottom: 64px;
   }
 }
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 768px) {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
 
 .advantages-list {
   display: flex;
@@ -32,9 +22,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
-    // gap: 20px;
-    // ???????
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -48,9 +35,12 @@
   @media screen and (min-width: 768px) {
     width: 180px;
   }
+  @media screen and (min-width: 1200px) {
+    width: 288px;
+  }
 }
 .advantages-icon {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
   }
@@ -63,6 +53,7 @@
 }
 .advantages-item-title {
   font-family: 'Titan One';
+  font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.14;
@@ -71,13 +62,50 @@
   color: #d41443;
   margin-bottom: 25px;
   @media screen and (min-width: 768px) {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: lowercase;
+    color: #d41443;
+    margin-bottom: 22px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: lowercase;
+    color: #d41443;
     margin-bottom: 22px;
   }
 }
 .advantages-item-discription {
   font-family: 'DM Sans';
+  font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.67;
   color: #000000;
+  @media screen and (min-width: 768px) {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #000000;
+  }
+  @media screen and (min-width: 1200px) {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+    color: #000000;
+  }
 }

@@ -1,29 +1,75 @@
 <section class="reviews">
   <div class="container">
     <h2 class="visually-hidden">Customer Reviews</h2>
-    <ul>
-      <li class="reviews__item">
-        <img
-          srcset="
-            ./images/reviews-img1-1x.png 1x,
-            ./images/reviews-img1-2x.png 2x
-          "
-          src="images/reviews-img1-1x.png"
-          alt="Photo of the first consumer"
-          width="85"
-          class="reviews__photo"
-        />
+    <div class="slider swiper-container">
+      <div class="swiper-wrapper">
+        <div class="reviews__item swiper-slide">
+          <img
+            srcset="
+              ./images/reviews-img1-1x.png 1x,
+              ./images/reviews-img1-2x.png 2x
+            "
+            src="images/reviews-img1-1x.png"
+            alt="Photo of the first consumer"
+            width="85"
+            class="reviews__photo"
+          />
 
-        <p class="reviews__text">
-          Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-          Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-          ipsum primis in nibh vel risus.
-        </p>
+          <p class="reviews__text">
+            <span class="reviews__wrap">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+              ipsum primis in nibh vel risus.
+            </span>
+          </p>
 
-        <p class="reviews__name">Emily, Los Angeles</p>
-      </li>
-      <li></li>
-      <li></li>
-    </ul>
+          <p class="reviews__name">Emily, Los Angeles</p>
+        </div>
+        <div class="reviews__item swiper-slide">
+          <img
+            srcset="
+              ./images/reviews-img2-1x.png 1x,
+              ./images/reviews-img2-2x.png 2x
+            "
+            src="images/reviews-img2-1x.png"
+            alt="Photo of the second consumer"
+            width="85"
+            class="reviews__photo"
+          />
+
+          <p class="reviews__text">
+            <span class="reviews__wrap">
+              Nullam viverra consectetuer.
+            </span>
+          </p>
+
+          <p class="reviews__name">Maria, Los Angeles</p>
+        </div>
+        <div class="reviews__item swiper-slide">
+          <img
+            srcset="
+              ./images/reviews-img3-1x.png 1x,
+              ./images/reviews-img3-2x.png 2x
+            "
+            src="images/reviews-img3-1x.png"
+            alt="Photo of the third consumer"
+            width="85"
+            class="reviews__photo"
+          />
+
+          <p class="reviews__text">
+            <span class="reviews__wrap">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
+            </span>
+          </p>
+
+          <p class="reviews__name">Anna, Los Angeles</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
   </div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module" src="/src/script.js"></script>
 </section>

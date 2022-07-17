@@ -1,4 +1,3 @@
-
 .reviews {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -23,6 +22,25 @@
   }
 }
 
+.reviews__wrap {
+  display: block;
+  position: relative;
+  padding: 0px 8px 5px 15px;
+  background-image: repeating-linear-gradient(
+    transparent 0px,
+    transparent 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px,
+    transparent 31px
+  );
+  @media screen and (min-width: 768px) {
+    padding: 0px 49px 8px 45px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0px 35px 8px 36px;
+  }
+}
+
 .reviews__text {
   position: relative;
   font-weight: 500;
@@ -31,29 +49,29 @@
   text-align: center;
   color: #000000;
   background-color: #fafafa;
-  padding: 41px 52px 19px 71px;
+  padding: 41px 44px 19px 56px;
   z-index: 100;
-  margin-bottom: 34px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    max-width: 280px;
+  }
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 216%;
     letter-spacing: 0.04em;
-    padding: 37px 53px 44px 51px;
-    background-color: transparent;
-    margin-bottom: 24px;
-    width: 620px;
+    padding: 37px 6px 36px 6px;
+    background-color: rgba(250, 250, 250, 0.4);
+    max-width: 620px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 186%;
-    padding: 47px 109px 39px 109px;
+    padding: 47px 74px 31px 72px;
     background-color: #fafafa;
-    margin-bottom: 36px;
-    width: 968px;
+    max-width: 968px;
   }
 
   &::before {
@@ -78,116 +96,63 @@
       background-image: url(../images/marks.png);
     }
   }
-  &::after {
-    content: '';
-    position: absolute;
-    top: 72px;
-    left: 56px;
-    width: 100%;
-    max-width: 180px;
-    height: 217px;
-    @media screen and (min-width: 768px) {
-      top: 68px;
-      left: 6px;
-      max-width: 608px;
-      height: 64px;
-    }
-    @media screen and (min-width: 1200px) {
-      top: 76px;
-      left: 73px;
-      max-width: 821px;
-      height: 32px;
-    }
-    // background-image: -webkit-repeating-linear-gradient(
-    //   -90deg,
-    //   #e1e1e1 0px,
-    //   #e1e1e1 1px,
-    //   transparent 1px,
-    //   transparent 30px,
-    //   #e1e1e1 30px
-    // );
-    // background-image: -moz-repeating-linear-gradient(
-    //  -90deg,
-    //   #e1e1e1 0px,
-    //   #e1e1e1 1px,
-    //   transparent 1px,
-    //   transparent 30px,
-    //   #e1e1e1 30px
-    // );
-    // background-image: -ms-repeating-linear-gradient(
-    //   -90deg,
-    //   #e1e1e1 0px,
-    //   #e1e1e1 1px,
-    //   transparent 1px,
-    //   transparent 30px,
-    //   #e1e1e1 30px
-    // );
-    // background-image: -o-repeating-linear-gradient(
-    //   -90deg,
-    //   #e1e1e1 0px,
-    //   #e1e1e1 1px,
-    //   transparent 1px,
-    //   transparent 30px,
-    //   #e1e1e1 30px
-    // );
-    background-image: repeating-linear-gradient(
-      #e1e1e1 0px,
-      #e1e1e1 1px,
-      transparent 1px,
-      transparent 30px,
-      #e1e1e1 30px
-    );
-  }
 }
 
 .reviews__name {
-  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 186%;
   text-align: center;
   color: #000000;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     font-size: 16px;
-    margin-bottom: 44px;
+    margin-bottom: 32px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 20px;
   }
   &::before {
-    // Картинка
-
-    // content: '';
-    // position: absolute;
-    // top: -16px;
-    // left: 50%;
-    // transform: translateX(-50%);
-    // background-image: url(../images/dots.png);
-    // width: 32px;
-    // height: 4px;
-
-    // Текст
-
     content: '. . .';
     color: #c7133e;
     font-size: 31px;
-    position: absolute;
-    top: -37px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -28px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-image: url(../images/slider-dots.png);
-    width: 72px;
-    height: 12px;
-    @media screen and (min-width: 768px) {
-      bottom: -44px;
+    margin: 0 auto 16px;
+    display: block;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-top: -20px;
     }
   }
+}
+
+.swiper-container {
+  overflow: hidden;
+}
+
+.slider .swiper-pagination {
+  position: static;
+  bottom: 0;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 9px;
+}
+
+.slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  line-height: 20px;
+  font-size: 14px;
+  background:#d9d9d9;
+  opacity: 1;
+  margin: 0 9px;
+}
+
+.slider .swiper-pagination-bullet-active {
+  background-color: transparent;
+  background-image: url(../images/house.png);
+  width: 12px;
+  height: 12px;
+  border-radius: 0;
 }

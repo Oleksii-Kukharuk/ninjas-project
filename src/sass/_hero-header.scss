@@ -4,23 +4,40 @@
 
   &__wrapper {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 768px) {
+      margin-top: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 37px;
+    }
+
   }
 
   &__logo {
     display: block;
-    width: 199px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 128px;
+    }
+  }
+  &__img {
+    max-width: 199px;
     height: 50px;
-    margin-top: 8px;
-    margin-bottom: 25px;
+
   }
 
   &__button {
     display: flex;
     border: none;
     background-color: transparent;
-    padding-top: 27px;
-    z-index: 4;
+    z-index: 10;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-left: auto;
+    }
 
     @media screen and (min-width: 1200px) {
       display: none;
@@ -46,8 +63,61 @@
     height: 44px;
     border: none;
     border-radius: 22px;
-    margin-bottom: 19px;
-    margin-left: 20px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 19px;
+      margin-left: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 159px;
+      margin-left: auto;
+      transition: background-color 250ms linear;
+    }
+    @media screen and (min-width: 1200px) {
+      &:hover,
+      &:focus {
+        background-color: #ECEBEB;
+      }
+    }
+    &--tablet {
+      display: flex;
+      position: relative;
+      background-color: #ffffff;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.3;
+      align-items: center;
+      justify-content: center;
+      color: #d41443;
+      width: 160px;
+      height: 44px;
+      border: none;
+      border-radius: 22px;
+      margin-left: 32px;
+      transition: background-color 250ms linear;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        background-image: url(/src/images/vector-header.svg);
+        width: 8px;
+        height: 10px;
+        margin-left: 14px;
+      }
+      &:hover,
+      &:focus {
+        background-color: #ECEBEB;
+      }
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+      @media screen and (min-width: 1200px) {
+        display: none;
+      }
+    }
+
 
     &::after {
       content: '';
@@ -56,7 +126,11 @@
       width: 8px;
       height: 10px;
       margin-left: 28px;
+      @media screen and (min-width: 1200px) {
+        margin-left: 13px;
+      }
     }
+
   }
 }
 .header__button.is-open .header__icon--close {
@@ -67,7 +141,7 @@
 }
 
 .menu-container {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     display: none;
     position: absolute;
     top: 0;
@@ -83,8 +157,17 @@
       flex-direction: column;
       flex-direction: column-reverse;
       justify-content: flex-end;
-      height: 100vh;
     }
+  }
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    width: 254px;
+    height: 1020px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
   }
   &__nav {
     font-family: 'DM Sans';
@@ -92,26 +175,45 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.3;
+    }
   }
-  @media screen and (min-width: 1200px) {
-    display: none;
-    align-items: center;
-    width: 100%;
-  }
+
 }
 .site-nav {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
   &__item {
-    border: 1px solid #e18298;
-    padding-left: 20px;
-    padding-top: 13px;
-    padding-bottom: 11px;
+    @media screen and (max-width: 1199px) {
+      border: 1px solid #e18298;
+      padding-left: 20px;
+      padding-top: 13px;
+      padding-bottom: 11px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 35px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+
   }
   &__link {
     text-decoration: none;
     color: #ffffff;
+    transition: color 250ms linear;
 
     &--page {
       color: #d41443;
     }
+    &:hover,
+    &:focus {
+      color: #d41443;
+    }
+
   }
 }

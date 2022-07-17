@@ -48,6 +48,18 @@
     margin-bottom: 40px;
   }
 }
+.advantages-icon-heart {
+  margin-bottom: 16px;
+  background-image: url(/src/images/hart_advantsges.png);
+  background-repeat: no-repeat;
+  background-position: 0;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
 .advantages-item-icon {
   fill: #ffa5ba;
 }

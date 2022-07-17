@@ -22,14 +22,12 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-direction: row;
-    gap: 112px;
+    justify-content: space-around;
   }
 }
 .advantages-item {
+  display: inline-flex;
+  flex-direction: column;
   width: 230px;
   height: auto;
   @media screen and (min-width: 768px) {
@@ -37,31 +35,50 @@
   }
   @media screen and (min-width: 1200px) {
     width: 288px;
+    align-items: center;
   }
 }
-.advantages-icon {
-  margin-bottom: 16px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 36px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 40px;
-  }
-}
-.advantages-icon-heart {
-  margin-bottom: 16px;
-  // background-image: url(../src/images/hart_advantsges.png);
+.backet-png::before {
+  content: '';
+  width: 33px;
+  height: 50px;
+  background-size: contain;
+  background-image: url(/src/images/backet_advantages.png);
+  background-color: transparent;
   background-repeat: no-repeat;
-  background-position: 0;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 36px;
-  }
+  background-position: center;
+  margin-bottom: 36px;
   @media screen and (min-width: 1200px) {
     margin-bottom: 40px;
   }
 }
-.advantages-item-icon {
-  fill: #ffa5ba;
+.appels-png::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-image: url(/src/images/apples_advantages.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 36px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+.hart-png::before {
+  content: '';
+  width: 44px;
+  height: 50px;
+  background-size: contain;
+  background-image: url(/src/images/hart_advantsges.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 36px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
 }
 .advantages-item-title {
   font-family: 'Titan One';
@@ -96,6 +113,7 @@
     margin-bottom: 22px;
   }
 }
+
 .advantages-item-discription {
   font-family: 'DM Sans';
   font-style: normal;
@@ -119,5 +137,6 @@
     line-height: 1.75;
     letter-spacing: 0.02em;
     color: #000000;
+    text-align: center;
   }
 }

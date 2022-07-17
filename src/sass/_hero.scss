@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding-top: 194px;
   padding-bottom: 158px;
+  overflow: hidden;
   @media screen and (max-width: 319px) {
     background-image: url(/src/images/hero-mb-bg.jpg);
     height: 502px;
@@ -15,7 +16,7 @@
     }
   }
 
-  @media screen and (min-width: 320px) and (max-width: 768px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     background-image: url(/src/images/hero-mb-bg.jpg);
     height: 502px;
     background-position: center;
@@ -137,6 +138,11 @@
     border-radius: 20px;
     padding: 9px 14px;
     transition: color 250ms linear, background-color 250ms linear;
+    &:hover,
+    &:focus {
+      color: #d41443;
+      background-color: #ecebeb;
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       font-size: 8px;
@@ -146,12 +152,6 @@
       font-size: 14px;
       padding: 11px 22px;
     }
-  }
-
-  &__btn:hover,
-  &__btn:focus {
-    color: #d41443;
-    background-color: #ecebeb;
   }
 }
 
@@ -199,6 +199,11 @@
   &__btn {
     background: #ffffff;
     border-radius: 50%;
+    transition: background-color 250ms linear;
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
     @media screen and (min-width: 1200px) {
       width: 26px;
       height: 26px;

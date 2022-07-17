@@ -1,9 +1,10 @@
-.products__section {
+.section__product {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .section__label {
+  font-family: 'Titan One';
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -50,7 +51,7 @@
   }
 }
 
-.products__last-title--icecream {
+.products-list__last-title--icecream {
   background: #ffb8ca;
   border-radius: 24px;
   text-align: center;
@@ -81,7 +82,7 @@
   }
 }
 
-.products__last-title--icecoffee {
+.products-list__last-title--icecoffee {
   background: #f0d1a5;
   border-radius: 24px;
   height: 100%;
@@ -112,7 +113,7 @@
   }
 }
 
-.products__last-title--milkshakes {
+.products-list__last-title--milkshakes {
   background: #c2e297;
   border-radius: 24px;
   text-align: center;
@@ -143,7 +144,7 @@
   }
 }
 
-.products-name {
+.products-list__name {
   font-family: 'Titan One';
   font-size: 20px;
   line-height: 1.15;
@@ -163,29 +164,29 @@
     font-size: 30px;
     line-height: 1.13;
   }
-}
 
-.products-name::after {
-  content: '. . .';
-  position: absolute;
-  top: 205px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  @media screen and (min-width: 768px) {
-    top: 160px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  @media screen and (min-width: 1200px) {
+  &::after {
+    content: '. . .';
+    position: absolute;
     top: 205px;
     left: 50%;
     transform: translateX(-50%);
+
+    @media screen and (min-width: 768px) {
+      top: 160px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 205px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
-.products__text {
+.products-list__text {
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 14px;
@@ -223,52 +224,52 @@
     margin-top: -32px;
     margin-left: -32px;
   }
+
+  &__item {
+    background-color: transparent;
+    position: relative;
+    height: 489px;
+    margin-bottom: 150px;
+
+    @media screen and (min-width: 768px) {
+      height: 473px;
+      display: flex;
+      margin-top: 16px;
+      margin-left: 16px;
+      width: calc(100% / 3 - 16px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      height: 535px;
+      display: flex;
+      margin-top: 32px;
+      margin-left: 32px;
+      width: calc(100% / 3 - 32px);
+    }
+  }
 }
 
-.products-list__item {
-  background-color: transparent;
-  position: relative;
-  height: 489px;
-  margin-bottom: 150px;
-
-  @media screen and (min-width: 768px) {
-    height: 473px;
-    display: flex;
-    margin-top: 16px;
-    margin-left: 16px;
-    width: calc(100% / 3 - 16px);
-  }
-
-  @media screen and (min-width: 1200px) {
-    height: 535px;
-    display: flex;
-    margin-top: 32px;
-    margin-left: 32px;
-    width: calc(100% / 3 - 32px);
-  }
-}
-
-.products__immage {
+.products-list__immage {
   height: 100%;
   width: 100%;
   border-radius: 24px;
+
+  &__immage--rose {
+    background-color: #ffb8ca;
+  }
+
+  &__immage--yellow {
+    background-color: #f0d1a5;
+  }
+
+  &__immage--green {
+    background-color: #c2e297;
+  }
 }
 
-.products__immage--rose {
-  background-color: #ffb8ca;
-}
-
-.products__immage--yellow {
-  background-color: #f0d1a5;
-}
-
-.products__immage--green {
-  background-color: #c2e297;
-}
-
-.products__immage--rose::before,
-.products__immage--yellow::before,
-.products__immage--green::before {
+.products-list__immage--rose::before,
+.products-list__immage--yellow::before,
+.products-list__immage--green::before {
   content: '';
   width: 280px;
   height: 280px;
@@ -299,7 +300,7 @@
   }
 }
 
-.products__immage--rose::before {
+.products-list__immage--rose::before {
   background-image: url(../images/desctop-foto/ice1x.png);
 
   @media (min-device-pixel-ratio: 2),
@@ -310,7 +311,7 @@
   }
 }
 
-.products__immage--yellow::before {
+.products-list__immage--yellow::before {
   background-image: url(../images/desctop-foto/pic1x.png);
 
   @media (min-device-pixel-ratio: 2),
@@ -321,7 +322,7 @@
   }
 }
 
-.products__immage--green::before {
+.products-list__immage--green::before {
   background-image: url(../images/desctop-foto/home-pic1x.png);
 
   @media (min-device-pixel-ratio: 2),
@@ -332,19 +333,26 @@
   }
 }
 
-.products__button {
+.products-list__button {
   width: 40px;
   height: 40px;
   background-color: #ffffff;
   border-radius: 50%;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #d41443;
+  }
 }
 
-.products__puncts {
-  fill: #ffffff;
-  margin-bottom: 32px;
-}
-
-.products__svg {
+.products-list__svg {
   fill: #d41443;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products-list__button:hover .products-list__svg,
+.products-list__button:focus .products-list__svg {
+  fill: #ffffff;
 }

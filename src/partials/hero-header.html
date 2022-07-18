@@ -1,61 +1,56 @@
 <header class="header">
-    <div class="container header__wrapper">
-      <a class="header__logo" href=""
-        ><img class="header__img" src="/src/images/header-logo.svg" alt="logo"
-      /></a>
-      <button
-        type="button"
-        class="header__button"
-        data-menu-button-first
-      >
-        <svg width="20" height="12" aria-label="Мобильное меню">
-          <use
-            class="header__icon--menu"
-            href="/src/images/symbol-defs-header.svg#burger"
-          ></use>
-          <!-- <use
+  <div class="container header__wrapper">
+    <a class="header__logo" href=""
+      ><img class="header__img" src="/src/images/header-logo.svg" alt="logo"
+    /></a>
+    <button type="button" class="header__button" data-menu-button-first>
+      <svg width="20" height="12" aria-label="Мобильное меню">
+        <use
+          class="header__icon--menu"
+          href="/src/images/symbol-defs-header.svg#burger"
+        ></use>
+        <!-- <use
             class="header__icon--close"
             href="/src/images/symbol-defs-header.svg#close"
           ></use> -->
+      </svg>
+    </button>
+    <button
+      type="button"
+      class="header__button-menu--tablet"
+      data-menu-button-thrd
+    >
+      Buy now
+    </button>
+    <div class="menu-container" data-menu>
+      <nav class="menu-container__nav">
+        <ul class="site-nav">
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--page" href="">Home</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#about">About us</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#how-it">How it&#8217;s made?</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#product">Our products</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="header__button-menu">Buy now</button>
+      <button type="button" class="header__button-close" data-menu-button-sec>
+        <svg width="14" height="14" aria-label="Мобильное меню">
+          <use
+            class="header__icon--menu"
+            href="/src/images/symbol-defs-header.svg#close"
+          ></use>
         </svg>
       </button>
-      <button
-        type="button"
-        class="header__button-menu--tablet"
-        data-menu-button-thrd
-      >
-        Buy now
-      </button>
-      <div class="menu-container" data-menu>
-        <nav class="menu-container__nav">
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--page" href="">Home</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="">About us</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="">How it&#8217;s made?</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="">Our products</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <button type="button" class="header__button-menu">Buy now</button>
-        <button type="button" class="header__button-close" data-menu-button-sec>
-          <svg width="14" height="14" aria-label="Мобильное меню">
-            <use
-              class="header__icon--menu"
-              href="/src/images/symbol-defs-header.svg#close"
-            ></use>
-          </svg>
-        </button>
-      </div>
     </div>
-  </header>
-  
+  </div>
+</header>

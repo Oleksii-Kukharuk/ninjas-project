@@ -75,6 +75,7 @@
     color: #000000;
     width: 220px;
     margin-bottom: 40px;
+    z-index: 1;
 
 
     @media screen and (min-width: 768px) {
@@ -107,6 +108,7 @@
     line-height: 1.58;
     color: #907E82;
     width: 220px;
+    z-index: 1;
 
     @media screen and (min-width: 768px) {
         width: unset;
@@ -143,6 +145,7 @@
     margin: 0 auto;
     margin-top: 20px;
     transition: color, 300ms linear, background-color, 300ms linear;
+    z-index: 2;
 
     @media screen and (min-width: 768px) {
         display: unset;
@@ -205,15 +208,30 @@
 
 .about-milk-dex {
     display: none;
-    position: absolute;
 
 
-
-    @media screen and (min-width: 1200px) {
-        display: none;
+    @media screen and (min-width: 768px) {
+        display: unset;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        width: 15%;
+        z-index: 0;
     }
 
-    @media screen and (min-width: 1300px) {}
+}
+
+.about-milk-dex-right {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: unset;
+        position: absolute;
+        width: 15%;
+        right: 0;
+        top: 150px;
+        z-index: 0;
+    }
 }
 
 .about-icon {

@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[contacts-menu-open]'),
-    closeModalBtn: document.querySelector('[contacts-menu-close]'),
-    modal: document.querySelector('[data-modal]'),
+    openModalBtn: document.querySelector('.contacts-menu-open'),
+    closeModalBtn: document.querySelector('.contacts-menu-close'),
+    modal: document.querySelector('.data-modal'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -15,9 +15,9 @@
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[primary-contacts-menu-open]'),
-    closeModalBtn: document.querySelector('[primary-contacts-menu-close]'),
-    modal: document.querySelector('[primary-data-modal]'),
+    openModalBtn: document.querySelector('.second-contacts-menu-open'),
+    closeModalBtn: document.querySelector('.second-contacts-menu-close'),
+    modal: document.querySelector('.second-data-modal'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);

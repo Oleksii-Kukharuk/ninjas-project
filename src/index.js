@@ -1,5 +1,5 @@
 (() => {
-  const menuBtnRef = document.querySelector('[data-menu-button]');
+  const menuBtnRef = document.querySelector('[data-menu-button-first]');
   const mobileMenuRef = document.querySelector('[data-menu]');
 
   menuBtnRef.addEventListener('click', () => {
@@ -16,8 +16,8 @@
 (() => {
   const menuBtnRefsec = document.querySelector('[data-menu-button-sec]');
   const mobileMenuRef = document.querySelector('[data-menu]');
-  const mobileMenuRefss = document.querySelector('[return]');
-  const mobileMenuRefsss = document.querySelector('[return-sec]');
+  const mobileMenuRefss = document.querySelector('[data-menu-button-first]');
+  const mobileMenuRefsss = document.querySelector('[data-menu-button-thrd]');
 
 
   menuBtnRefsec.addEventListener('click', () => {
@@ -30,8 +30,8 @@
 })();
 
 (() => {
-  const btn = document.querySelector('[visually-hidden-frst]');
-  const mobileMenuRef = document.querySelector('[visually-hidden-scnd]');
+  const btn = document.querySelector('[data-menu-button-first]');
+  const mobileMenuRef = document.querySelector('[data-menu-button-thrd]');
 
 
   btn.addEventListener('click', () => {

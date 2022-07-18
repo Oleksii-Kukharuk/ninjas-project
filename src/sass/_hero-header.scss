@@ -135,6 +135,7 @@
 // }
 
 .menu-container {
+  height: 100vh;
   @media screen and (max-width: 1199px) {
     // display: none;
     position: absolute;
@@ -144,7 +145,7 @@
     width: 250px;
     background-color: #e17992;
     padding-top: 20px;
-    height: 502px;
+    // height: 502px;
     z-index: 3;
     transition: transform 250ms linear;
     display: flex;
@@ -162,7 +163,7 @@
   }
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     width: 254px;
-    height: 1020px;
+    // height: 1020px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;

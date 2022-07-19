@@ -4,7 +4,7 @@
     padding: 20px 20px 0;
   }
   .footer-content--wrapper {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
   &__title-wrapper {
     max-width: 232px;
@@ -51,7 +51,10 @@
       margin-right: 28px;
     }
     &__link {
+      display: inline-block;
       color: #fea5bb;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: color;
     }
     &__link:hover,
     &__link:focus {
